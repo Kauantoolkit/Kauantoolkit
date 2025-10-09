@@ -1,52 +1,82 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  margin: 0;
-  padding: 0;
-  color: #222;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #212529;
+    --text-color: #333;
+    --background-color: #f4f4f4;
 }
 
-header {
-  background: #24292e;
-  color: white;
-  text-align: center;
-  padding: 2rem;
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+header, footer {
+    background: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
 }
 
 h1 {
-  margin: 0;
+    margin: 0;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+main {
+    flex-grow: 1;
 }
 
 section {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 1rem;
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
 }
 
 h2 {
-  text-align: center;
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid var(--primary-color);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    width: auto;
 }
 
 .video-container {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  background: #000;
-  border-radius: 10px;
-  overflow: hidden;
-  margin: 2rem 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9; 
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 2rem auto;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.video-container:hover {
+    transform: translateY(-5px);
 }
 
 .video-container iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 footer {
-  text-align: center;
-  padding: 1rem;
-  background: #24292e;
-  color: white;
+    font-size: 0.9rem;
+    margin-top: auto;
 }
