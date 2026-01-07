@@ -1,100 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
 :root {
-    --primary-color: #007bff;
-    --secondary-color: #212529;
-    --text-color: #333;
-    --background-color: #f4f4f4;
+  --bg: #0d0d0f;
+  --card: #141418;
+  --card2: #1b1b20;
+  --text: #e6e6e6;
+  --text-dark: #b3b3b3;
+  --primary: #7b5cff;
+  --primary-glow: rgba(123, 92, 255, 0.35);
+  --radius: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: var(--background-color);
-    margin: 0;
-    padding: 0;
-    color: var(--text-color);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; 
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  padding-bottom: 4rem;
 }
 
-header, footer {
-    background: var(--secondary-color);
-    color: white;
-    text-align: center;
-    padding: 2rem 1rem;
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(180deg, #121218, #0d0d0f00);
+  border-bottom: 1px solid #2a2a30;
 }
 
-h1 {
-    margin: 0;
-    color: var(--primary-color);
-    font-size: 2.5rem;
+header h1 {
+  font-size: 2.3rem;
+  margin-bottom: .5rem;
+  color: var(--primary);
+  text-shadow: 0 0 12px var(--primary-glow);
 }
 
-main {
-    flex-grow: 1;
+header p {
+  font-size: 1.1rem;
+  color: var(--text-dark);
 }
 
-section {
-    max-width: 1000px;
-    margin: 3rem auto;
-    padding: 0 1.5rem;
+.container {
+  width: 95%;
+  max-width: 900px;
+  margin: 2rem auto;
 }
 
-h2 {
-    text-align: center;
-    color: var(--secondary-color);
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    border-bottom: 3px solid var(--primary-color);
-    display: inline-block;
-    padding-bottom: 0.5rem;
-    width: auto;
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.9rem;
+  color: var(--primary);
+}
+
+.card {
+  background: var(--card);
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: var(--radius);
+  border: 1px solid #2b2b33;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 0 25px var(--primary-glow);
+}
+
+.card summary h3 {
+  font-size: 1.4rem;
+  color: var(--primary);
+}
+
+.card summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.card summary::-webkit-details-marker {
+  display: none;
+}
+
+.video-block {
+  margin: 1.4rem 0;
+  padding: 1rem 1rem 2rem 1rem;
+  background: var(--card2);
+  border-radius: var(--radius);
+  border: 1px solid #2d2d34;
+}
+
+.video-block h4 {
+  margin-bottom: .8rem;
+  font-weight: 600;
+  color: var(--text);
 }
 
 .video-container {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 9; 
-    border-radius: 12px;
-    overflow: hidden;
-    margin: 2rem auto;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.video-container:hover {
-    transform: translateY(-5px);
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: var(--radius);
+  border: 1px solid #333;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
 }
 
 .video-container iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    position: absolute;
-    top: 0;
-    left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
-footer {
-    font-size: 0.9rem;
-    margin-top: auto;
-}
-
-h3 {
-    text-align: center;
-    color: var(--text-color);
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-h4 {
-    text-align: center;
-    font-size: 1.15rem;
-    color: var(--secondary-color);
-    margin-top: 3rem; 
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid #ccc;
+.footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  font-size: .9rem;
+  color: var(--text-dark);
+  border-top: 1px solid #222;
 }
