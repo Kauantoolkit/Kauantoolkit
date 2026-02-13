@@ -1,6 +1,8 @@
 # Dependencies
 node_modules/
 
+projeto_react_usado_para_buildar/node_modules/
+
 # Build output
 build/
 dist/
