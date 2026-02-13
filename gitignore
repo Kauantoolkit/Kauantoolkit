@@ -1,9 +1,9 @@
 # Dependencies
-node_modules/
+*node_modules/*
 
 # Project directories to ignore
 projeto_react_usado_para_buildar/
-projeto_react_usado_para_buildar/node_modules/
+*projeto_react_usado_para_buildar/node_modules/*
 
 # Build output
 build/
