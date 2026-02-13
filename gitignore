@@ -1,5 +1,8 @@
 # Dependencies
-*node_modules/*
+node_modules/
+projeto_react_usado_para_buildar/
+assets/
+
 
 # Project directories to ignore
 projeto_react_usado_para_buildar/
