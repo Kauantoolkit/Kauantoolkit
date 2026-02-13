@@ -1,6 +1,6 @@
 # Olá! Eu sou Kauan Cristian de Souza
 
-Sou estudante de **Análise e Desenvolvimento de Sistemas** (Biopark), tenho 24 anos e sou apaixonado por transformar ideias em **soluções que geram valor**. Estou buscando oportunidades desafiadoras em TI.
+Sou estudante de **Análise e Desenvolvimento de Sistemas** (Biopark), tenho 25 anos e sou apaixonado por transformar ideias em **soluções que geram valor**. Estou buscando oportunidades desafiadoras em TI.
 
 ---
 

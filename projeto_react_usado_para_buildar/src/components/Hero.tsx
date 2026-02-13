@@ -15,7 +15,7 @@ export function Hero() {
             <span className="text-zinc-500">de Souza</span>
           </h1>
           <p className="text-xl text-zinc-400 leading-relaxed mb-8 max-w-2xl">
-            Tenho 24 anos e sou apaixonado por transformar ideias em soluções reais. 
+            Tenho 25 anos e sou apaixonado por transformar ideias em soluções reais. 
             Abaixo, você pode acompanhar minha evolução através das <strong>demonstrações em vídeo</strong> dos sistemas que desenvolvi durante minha graduação.
           </p>
           
