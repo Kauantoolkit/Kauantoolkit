@@ -1,11 +1,14 @@
 # Dependencies
 node_modules/
 
+# Project directories to ignore
+projeto_react_usado_para_buildar/
 projeto_react_usado_para_buildar/node_modules/
 
 # Build output
 build/
 dist/
+assets/
 
 # Package lock files (optional - some projects keep this)
 # package-lock.json
