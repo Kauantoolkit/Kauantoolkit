@@ -20,16 +20,7 @@ Meu foco é em desenvolvimento robusto e seguindo boas práticas:
 🔗 **[Acesse meu GitHub Pages com os vídeos e demonstrações dos sistemas ou exercicios publicos!](https://kauantoolkit.github.io/Kauantoolkit/)**
 
 
----
 
-### 📈 Minha Jornada no Código
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kauantoolkit&layout=compact&theme=radical&hide_border=true" alt="Linguagens Mais Usadas por Kauantoolkit">
-  <img src="https://streak-stats.demolab.com/?user=Kauantoolkit&theme=dark&hide_border=true" alt="Sequência de Contribuições de Kauantoolkit">
-</div>
-
----
 
 ### 🙋‍♂️ Humanidade e Proatividade (Soft Skills)
 
