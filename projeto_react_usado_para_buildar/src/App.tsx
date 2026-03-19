@@ -1,7 +1,7 @@
 import React from 'react';
 import { Hero, SkillOverview } from './components/Hero';
 import { ProjectSection } from './components/Projects';
-import { Github, Mail, MapPin, ExternalLink, PlayCircle } from 'lucide-react';
+import { Github, Mail, MapPin, ExternalLink, PlayCircle, Code2, Layers, Rocket } from 'lucide-react';
 
 const semester1 = [
   { id: 1, title: "Site Feito na Segunda Aula de HTML", youtubeId: "mJ90eJ2mDGs" },
@@ -80,6 +80,127 @@ export default function App() {
           <ProjectSection title="Segundo Semestre" projects={semester2} />
           <ProjectSection title="Primeiro Semestre" projects={semester1} />
         </div>
+
+        {/* Projetos Destacados */}
+        <section className="mt-40">
+          <div className="max-w-3xl mb-16">
+            <div className="flex items-center gap-3 text-blue-500 mb-6">
+              <Code2 size={28} />
+              <h2 className="text-sm font-black uppercase tracking-[0.3em]">
+                Projetos Destacados
+              </h2>
+            </div>
+            <h1 className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tighter">
+              O que estou construindo
+            </h1>
+            <p className="text-zinc-500 text-lg leading-relaxed">
+              Projetos individuais que desenvolvo fora da grade curricular — cada um explorando uma ideia diferente.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* TaskPlanner */}
+            <div className="group bg-zinc-900/50 border border-zinc-800/50 rounded-[2rem] p-8 hover:border-blue-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/5 flex flex-col gap-6">
+              <div className="flex items-center justify-between">
+                <div className="p-3 rounded-2xl bg-blue-500/10 text-blue-400">
+                  <Layers size={24} />
+                </div>
+                <span className="text-[10px] font-black uppercase tracking-widest text-green-400 bg-green-400/10 px-2 py-1 rounded">
+                  No Ar
+                </span>
+              </div>
+              <div>
+                <h3 className="text-xl font-black text-white mb-2 group-hover:text-blue-400 transition-colors">
+                  Task Planner
+                </h3>
+                <p className="text-zinc-500 text-sm leading-relaxed">
+                  Aplicação de planejamento de tarefas com interface moderna e funcionalidades de organização.
+                </p>
+              </div>
+              <div className="flex gap-3 mt-auto">
+                <a
+                  href="https://task-planner-jet.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 flex items-center justify-center gap-2 bg-blue-600 text-white px-4 py-3 rounded-xl font-bold text-sm hover:bg-blue-500 transition-colors"
+                >
+                  <ExternalLink size={14} />
+                  Ver Demo
+                </a>
+                <a
+                  href="https://github.com/Kauantoolkit/TaskPlanner"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 bg-zinc-800 text-zinc-300 px-4 py-3 rounded-xl font-bold text-sm hover:bg-zinc-700 transition-colors"
+                >
+                  <Github size={14} />
+                </a>
+              </div>
+            </div>
+
+            {/* GeradorDeDDDMultiplosAgentes */}
+            <div className="group bg-zinc-900/50 border border-zinc-800/50 rounded-[2rem] p-8 hover:border-blue-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/5 flex flex-col gap-6">
+              <div className="flex items-center justify-between">
+                <div className="p-3 rounded-2xl bg-blue-500/10 text-blue-400">
+                  <Layers size={24} />
+                </div>
+                <span className="text-[10px] font-black uppercase tracking-widest text-yellow-400 bg-yellow-400/10 px-2 py-1 rounded">
+                  Em Desenvolvimento
+                </span>
+              </div>
+              <div>
+                <h3 className="text-xl font-black text-white mb-2 group-hover:text-blue-400 transition-colors">
+                  Gerador de DDD com Múltiplos Agentes
+                </h3>
+                <p className="text-zinc-500 text-sm leading-relaxed">
+                  Sistema que utiliza múltiplos agentes de IA para geração automática de código seguindo o Domain-Driven Design.
+                </p>
+              </div>
+              <div className="flex gap-3 mt-auto">
+                <a
+                  href="https://github.com/Kauantoolkit/GeradorDeDDDMultiplosAgentes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 flex items-center justify-center gap-2 bg-zinc-800 text-zinc-300 px-4 py-3 rounded-xl font-bold text-sm hover:bg-zinc-700 transition-colors"
+                >
+                  <Github size={14} />
+                  Ver Repositório
+                </a>
+              </div>
+            </div>
+
+            {/* MetaProgrammer */}
+            <div className="group bg-zinc-900/50 border border-zinc-800/50 rounded-[2rem] p-8 hover:border-blue-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/5 flex flex-col gap-6">
+              <div className="flex items-center justify-between">
+                <div className="p-3 rounded-2xl bg-blue-500/10 text-blue-400">
+                  <Rocket size={24} />
+                </div>
+                <span className="text-[10px] font-black uppercase tracking-widest text-yellow-400 bg-yellow-400/10 px-2 py-1 rounded">
+                  Em Desenvolvimento
+                </span>
+              </div>
+              <div>
+                <h3 className="text-xl font-black text-white mb-2 group-hover:text-blue-400 transition-colors">
+                  MetaProgrammer
+                </h3>
+                <p className="text-zinc-500 text-sm leading-relaxed">
+                  Ferramenta de metaprogramação para automação e geração de código de forma inteligente.
+                </p>
+              </div>
+              <div className="flex gap-3 mt-auto">
+                <a
+                  href="https://github.com/Kauantoolkit/MetaProgrammer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 flex items-center justify-center gap-2 bg-zinc-800 text-zinc-300 px-4 py-3 rounded-xl font-bold text-sm hover:bg-zinc-700 transition-colors"
+                >
+                  <Github size={14} />
+                  Ver Repositório
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* GitHub Shortcut */}
         <section className="mt-40 bg-zinc-900/30 border border-zinc-800 p-12 md:p-20 rounded-[3rem] text-center">
