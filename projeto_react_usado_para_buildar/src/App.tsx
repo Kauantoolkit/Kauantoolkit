@@ -94,7 +94,7 @@ export default function App() {
               O que estou construindo
             </h1>
             <p className="text-zinc-500 text-lg leading-relaxed">
-              Projetos individuais que desenvolvo fora da grade curricular — cada um explorando uma ideia diferente.
+              Projetos individuais e em grupo — cada um explorando tecnologias e problemas diferentes.
             </p>
           </div>
 
@@ -199,6 +199,223 @@ export default function App() {
                 </a>
               </div>
             </div>
+
+            {/* back_spring_skeleton */}
+            <div className="group bg-zinc-900/50 border border-zinc-800/50 rounded-[2rem] p-8 hover:border-blue-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/5 flex flex-col gap-6">
+              <div className="flex items-center justify-between">
+                <div className="p-3 rounded-2xl bg-blue-500/10 text-blue-400">
+                  <Layers size={24} />
+                </div>
+                <span className="text-[10px] font-black uppercase tracking-widest text-yellow-400 bg-yellow-400/10 px-2 py-1 rounded">
+                  Em Desenvolvimento
+                </span>
+              </div>
+              <div>
+                <h3 className="text-xl font-black text-white mb-2 group-hover:text-blue-400 transition-colors">
+                  Back Spring Skeleton
+                </h3>
+                <p className="text-zinc-500 text-sm leading-relaxed">
+                  Skeleton Spring Boot com API REST pronta — base reutilizável para acelerar o início de novos projetos Java.
+                </p>
+              </div>
+              <div className="flex gap-3 mt-auto">
+                <a href="https://github.com/Kauantoolkit/back_spring_skeleton" target="_blank" rel="noopener noreferrer"
+                  className="flex-1 flex items-center justify-center gap-2 bg-zinc-800 text-zinc-300 px-4 py-3 rounded-xl font-bold text-sm hover:bg-zinc-700 transition-colors">
+                  <Github size={14} />
+                  Ver Repositório
+                </a>
+              </div>
+            </div>
+
+            {/* sistemaAcademia */}
+            <div className="group bg-zinc-900/50 border border-zinc-800/50 rounded-[2rem] p-8 hover:border-blue-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/5 flex flex-col gap-6">
+              <div className="flex items-center justify-between">
+                <div className="p-3 rounded-2xl bg-blue-500/10 text-blue-400">
+                  <Layers size={24} />
+                </div>
+                <span className="text-[10px] font-black uppercase tracking-widest text-yellow-400 bg-yellow-400/10 px-2 py-1 rounded">
+                  Em Desenvolvimento
+                </span>
+              </div>
+              <div>
+                <h3 className="text-xl font-black text-white mb-2 group-hover:text-blue-400 transition-colors">
+                  Sistema Academia
+                </h3>
+                <p className="text-zinc-500 text-sm leading-relaxed">
+                  Sistema de gerenciamento de academia desenvolvido em TypeScript.
+                </p>
+              </div>
+              <div className="flex gap-3 mt-auto">
+                <a href="https://github.com/Kauantoolkit/sistemaAcademia" target="_blank" rel="noopener noreferrer"
+                  className="flex-1 flex items-center justify-center gap-2 bg-zinc-800 text-zinc-300 px-4 py-3 rounded-xl font-bold text-sm hover:bg-zinc-700 transition-colors">
+                  <Github size={14} />
+                  Ver Repositório
+                </a>
+              </div>
+            </div>
+
+            {/* TodoListVue */}
+            <div className="group bg-zinc-900/50 border border-zinc-800/50 rounded-[2rem] p-8 hover:border-blue-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/5 flex flex-col gap-6">
+              <div className="flex items-center justify-between">
+                <div className="p-3 rounded-2xl bg-blue-500/10 text-blue-400">
+                  <Rocket size={24} />
+                </div>
+                <span className="text-[10px] font-black uppercase tracking-widest text-green-400 bg-green-400/10 px-2 py-1 rounded">
+                  Concluído
+                </span>
+              </div>
+              <div>
+                <h3 className="text-xl font-black text-white mb-2 group-hover:text-blue-400 transition-colors">
+                  Todo List Vue
+                </h3>
+                <p className="text-zinc-500 text-sm leading-relaxed">
+                  Lista de tarefas feita com Vue 3 — exploração do framework como alternativa ao React.
+                </p>
+              </div>
+              <div className="flex gap-3 mt-auto">
+                <a href="https://github.com/Kauantoolkit/TodoListVue" target="_blank" rel="noopener noreferrer"
+                  className="flex-1 flex items-center justify-center gap-2 bg-zinc-800 text-zinc-300 px-4 py-3 rounded-xl font-bold text-sm hover:bg-zinc-700 transition-colors">
+                  <Github size={14} />
+                  Ver Repositório
+                </a>
+              </div>
+            </div>
+
+            {/* compara-o-python-rust */}
+            <div className="group bg-zinc-900/50 border border-zinc-800/50 rounded-[2rem] p-8 hover:border-blue-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/5 flex flex-col gap-6">
+              <div className="flex items-center justify-between">
+                <div className="p-3 rounded-2xl bg-blue-500/10 text-blue-400">
+                  <Code2 size={24} />
+                </div>
+                <span className="text-[10px] font-black uppercase tracking-widest text-green-400 bg-green-400/10 px-2 py-1 rounded">
+                  Concluído
+                </span>
+              </div>
+              <div>
+                <h3 className="text-xl font-black text-white mb-2 group-hover:text-blue-400 transition-colors">
+                  Python vs Rust
+                </h3>
+                <p className="text-zinc-500 text-sm leading-relaxed">
+                  Comparação de performance entre Python e Rust com listas de crescimento exponencial — benchmarks reais.
+                </p>
+              </div>
+              <div className="flex gap-3 mt-auto">
+                <a href="https://github.com/Kauantoolkit/compara-o-python-rust" target="_blank" rel="noopener noreferrer"
+                  className="flex-1 flex items-center justify-center gap-2 bg-zinc-800 text-zinc-300 px-4 py-3 rounded-xl font-bold text-sm hover:bg-zinc-700 transition-colors">
+                  <Github size={14} />
+                  Ver Repositório
+                </a>
+              </div>
+            </div>
+
+            {/* previsor-atraso-frete */}
+            <div className="group bg-zinc-900/50 border border-zinc-800/50 rounded-[2rem] p-8 hover:border-blue-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/5 flex flex-col gap-6">
+              <div className="flex items-center justify-between">
+                <div className="p-3 rounded-2xl bg-blue-500/10 text-blue-400">
+                  <Code2 size={24} />
+                </div>
+                <span className="text-[10px] font-black uppercase tracking-widest text-green-400 bg-green-400/10 px-2 py-1 rounded">
+                  Concluído
+                </span>
+              </div>
+              <div>
+                <h3 className="text-xl font-black text-white mb-2 group-hover:text-blue-400 transition-colors">
+                  Previsor de Atraso de Frete
+                </h3>
+                <p className="text-zinc-500 text-sm leading-relaxed">
+                  Modelo em Python para prever atrasos em entregas de frete com base em dados históricos.
+                </p>
+              </div>
+              <div className="flex gap-3 mt-auto">
+                <a href="https://github.com/Kauantoolkit/previsor-atraso-frete" target="_blank" rel="noopener noreferrer"
+                  className="flex-1 flex items-center justify-center gap-2 bg-zinc-800 text-zinc-300 px-4 py-3 rounded-xl font-bold text-sm hover:bg-zinc-700 transition-colors">
+                  <Github size={14} />
+                  Ver Repositório
+                </a>
+              </div>
+            </div>
+
+            {/* Sereno-Kauan */}
+            <div className="group bg-zinc-900/50 border border-zinc-800/50 rounded-[2rem] p-8 hover:border-blue-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/5 flex flex-col gap-6">
+              <div className="flex items-center justify-between">
+                <div className="p-3 rounded-2xl bg-blue-500/10 text-blue-400">
+                  <Rocket size={24} />
+                </div>
+                <span className="text-[10px] font-black uppercase tracking-widest text-purple-400 bg-purple-400/10 px-2 py-1 rounded">
+                  Grupo
+                </span>
+              </div>
+              <div>
+                <h3 className="text-xl font-black text-white mb-2 group-hover:text-blue-400 transition-colors">
+                  Sereno
+                </h3>
+                <p className="text-zinc-500 text-sm leading-relaxed">
+                  Aplicativo para o Biopark de análise psicopatológica — projeto em grupo desenvolvido em Flutter.
+                </p>
+              </div>
+              <div className="flex gap-3 mt-auto">
+                <a href="https://github.com/Kauantoolkit/Sereno-Kauan" target="_blank" rel="noopener noreferrer"
+                  className="flex-1 flex items-center justify-center gap-2 bg-zinc-800 text-zinc-300 px-4 py-3 rounded-xl font-bold text-sm hover:bg-zinc-700 transition-colors">
+                  <Github size={14} />
+                  Ver Repositório
+                </a>
+              </div>
+            </div>
+
+            {/* Administra-Kauan */}
+            <div className="group bg-zinc-900/50 border border-zinc-800/50 rounded-[2rem] p-8 hover:border-blue-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/5 flex flex-col gap-6">
+              <div className="flex items-center justify-between">
+                <div className="p-3 rounded-2xl bg-blue-500/10 text-blue-400">
+                  <Layers size={24} />
+                </div>
+                <span className="text-[10px] font-black uppercase tracking-widest text-purple-400 bg-purple-400/10 px-2 py-1 rounded">
+                  Grupo
+                </span>
+              </div>
+              <div>
+                <h3 className="text-xl font-black text-white mb-2 group-hover:text-blue-400 transition-colors">
+                  Administra
+                </h3>
+                <p className="text-zinc-500 text-sm leading-relaxed">
+                  Refatoração de sistema legado — projeto em grupo com foco em qualidade de código e modernização.
+                </p>
+              </div>
+              <div className="flex gap-3 mt-auto">
+                <a href="https://github.com/Kauantoolkit/Administra-Kauan" target="_blank" rel="noopener noreferrer"
+                  className="flex-1 flex items-center justify-center gap-2 bg-zinc-800 text-zinc-300 px-4 py-3 rounded-xl font-bold text-sm hover:bg-zinc-700 transition-colors">
+                  <Github size={14} />
+                  Ver Repositório
+                </a>
+              </div>
+            </div>
+
+            {/* domus-front */}
+            <div className="group bg-zinc-900/50 border border-zinc-800/50 rounded-[2rem] p-8 hover:border-blue-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/5 flex flex-col gap-6">
+              <div className="flex items-center justify-between">
+                <div className="p-3 rounded-2xl bg-blue-500/10 text-blue-400">
+                  <Rocket size={24} />
+                </div>
+                <span className="text-[10px] font-black uppercase tracking-widest text-purple-400 bg-purple-400/10 px-2 py-1 rounded">
+                  Grupo
+                </span>
+              </div>
+              <div>
+                <h3 className="text-xl font-black text-white mb-2 group-hover:text-blue-400 transition-colors">
+                  Domus
+                </h3>
+                <p className="text-zinc-500 text-sm leading-relaxed">
+                  Frontend de sistema de gerenciamento doméstico desenvolvido em grupo com Flutter/Dart.
+                </p>
+              </div>
+              <div className="flex gap-3 mt-auto">
+                <a href="https://github.com/Kauantoolkit/domus-front" target="_blank" rel="noopener noreferrer"
+                  className="flex-1 flex items-center justify-center gap-2 bg-zinc-800 text-zinc-300 px-4 py-3 rounded-xl font-bold text-sm hover:bg-zinc-700 transition-colors">
+                  <Github size={14} />
+                  Ver Repositório
+                </a>
+              </div>
+            </div>
+
           </div>
         </section>
 
