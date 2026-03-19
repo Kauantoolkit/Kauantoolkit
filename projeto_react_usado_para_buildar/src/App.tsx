@@ -404,7 +404,7 @@ export default function App() {
                   Domus
                 </h3>
                 <p className="text-zinc-500 text-sm leading-relaxed">
-                  Frontend de sistema de gerenciamento doméstico desenvolvido em grupo com Flutter/Dart.
+                  Aplicativo de chat desenvolvido em grupo com Flutter/Dart.
                 </p>
               </div>
               <div className="flex gap-3 mt-auto">
