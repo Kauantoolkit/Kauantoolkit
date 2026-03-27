@@ -25,10 +25,20 @@ const semester3 = [
 ];
 
 export default function App() {
+
+
+
+
   return (
+
+
+
+
     <div className="min-h-screen bg-zinc-950 text-zinc-300 selection:bg-blue-500/30 font-sans">
+
       {/* Navbar Minimalista */}
       <nav className="fixed top-0 w-full z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-900">
+
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center font-black text-white italic">
@@ -58,30 +68,14 @@ export default function App() {
       <Hero />
       <SkillOverview />
 
-      <main id="videos" className="container mx-auto px-4 py-32">
-        <div className="max-w-3xl mb-24">
-          <div className="flex items-center gap-3 text-blue-500 mb-6">
-            <PlayCircle size={28} />
-            <h2 className="text-sm font-black uppercase tracking-[0.3em]">
-              Portfólio de Vídeos
-            </h2>
-          </div>
-          <h1 className="text-4xl md:text-6xl font-black text-white mb-8 tracking-tighter">
-            Veja meus desenvolvimentos como dev!
-          </h1>
-          <p className="text-zinc-500 text-lg md:text-xl leading-relaxed">
-            Aqui estão reunidos os vídeos e demonstrações dos sistemas e exercícios públicos que desenvolvi. 
-            Cada semestre representa um salto no conhecimento técnico e na complexidade das soluções.
-          </p>
-        </div>
+      {/* O NOME DA MAIN É VIDEOS */}
 
-        <div className="space-y-40">
-          <ProjectSection title="Terceiro Semestre" projects={semester3} />
-          <ProjectSection title="Segundo Semestre" projects={semester2} />
-          <ProjectSection title="Primeiro Semestre" projects={semester1} />
-        </div>
 
-        {/* Projetos Destacados */}
+    
+      
+    <main id="notvideos" className="container mx-auto px-4 py-32">
+
+      {/* Projetos Destacados */}
         <section className="mt-40">
           <div className="max-w-3xl mb-16">
             <div className="flex items-center gap-3 text-blue-500 mb-6">
@@ -93,9 +87,7 @@ export default function App() {
             <h1 className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tighter">
               O que estou construindo
             </h1>
-            <p className="text-zinc-500 text-lg leading-relaxed">
-              Projetos individuais e em grupo — cada um explorando tecnologias e problemas diferentes.
-            </p>
+
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -418,6 +410,33 @@ export default function App() {
 
           </div>
         </section>
+    </main>
+
+
+      <main id="videos" className="container mx-auto px-4 py-32">
+        
+
+        <div className="max-w-3xl mb-24">
+          <div className="flex items-center gap-3 text-blue-500 mb-6">
+            <PlayCircle size={28} />
+            <h2 className="text-sm font-black uppercase tracking-[0.3em]">
+              Portfólio de Vídeos
+            </h2>
+          </div>
+          <h1 className="text-4xl md:text-6xl font-black text-white mb-8 tracking-tighter">
+            Veja meus desenvolvimentos como dev!
+          </h1>
+          <p className="text-zinc-500 text-lg md:text-xl leading-relaxed">
+            Aqui estão reunidos os vídeos e demonstrações dos sistemas e exercícios públicos que desenvolvi. 
+            Cada semestre representa um salto no conhecimento técnico e na complexidade das soluções.
+          </p>
+        </div>
+
+        <div className="space-y-40">
+          <ProjectSection title="Terceiro Semestre" projects={semester3} />
+          <ProjectSection title="Segundo Semestre" projects={semester2} />
+          <ProjectSection title="Primeiro Semestre" projects={semester1} />
+        </div>
 
         {/* GitHub Shortcut */}
         <section className="mt-40 bg-zinc-900/30 border border-zinc-800 p-12 md:p-20 rounded-[3rem] text-center">
